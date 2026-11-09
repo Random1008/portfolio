@@ -93,9 +93,9 @@ window.PORTFOLIO = {
       intro: "creation et decouverte de fonctionnement",    // présentation de vos expérimentations avec l'IA
       models: ["opus 5.5", "sonnet 5", "deepseek v4 flash", "Qwen3.8 OBLITERATED"],             // ex. ["Nom du modèle — usage"]
       projects: ["infoduo - duolingo mais pour la tech", "knowledge os - obsidian mais optimiser pour l'ia", "random agent - agent ia baser sur deepseek harness", "arc browser - un navigateur web 100% personalisable baser sur chromium",],
-      tools: ["Claude desktop", "code oss", "brave browser", "photocraft", "canva",],
+      tools: ["Claude desktop", "terminal agent hermes", "code oss", "brave browser", "photocraft", "canva",],
       experiments: ["test du models chatgpt-oss-120B sur une Radeon RX 9060 XT 16Go", "test d'un model 1B sur un raspberry pi 4 2Go",],
-      ideas: [],
+      ideas: ["cree un model ia from scratch et le mettre dans une cle style cyberpunk",],
       demos: []               // ex. [{ label: "Démo", url: "https://..." }]
     }
   },
