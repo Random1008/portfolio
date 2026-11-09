@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Portfolio informatique &amp; IA</title>
+  <meta name="description" content="Me contacter : email, GitHub, LinkedIn et formulaire de contact.">
+  <meta name="theme-color" content="#121a22">
+  <script>
+    (function () {
+      var t = "dark";
+      try { t = localStorage.getItem("pf-theme") || "dark"; } catch (e) {}
+      document.documentElement.dataset.theme = t;
+      document.documentElement.classList.add("js");
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="../css/industry.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <script defer src="../js/data.js"></script>
+  <script defer src="../js/icons.js"></script>
+  <script defer src="../js/main.js"></script>
+  <script defer src="../js/contact.js"></script>
+  <script defer src="../js/animations.js"></script>
+</head>
+<body data-page="contact" data-base="../">
+  <a class="skip-link btn btn-primary" href="#contenu">Aller au contenu</a>
+  <header data-site-header class="site-header"></header>
+  <main id="contenu">
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb reveal"><a href="../index.html">~/accueil</a> / contact</p>
+        <h1 class="reveal" style="--d:.08s">Contact</h1>
+        <p class="section-lead reveal" style="--d:.16s">Une question, un projet, une opportunité de stage ou d'emploi ? Écrivez-moi.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="channel-list reveal" data-contact-channels></div>
+        <form id="contact-form" class="contact-form blueprint reveal" style="--d:.1s" novalidate>
+          <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+          <div class="form-row">
+            <div class="field"><label for="cf-name">Nom</label><input class="input" id="cf-name" name="name" type="text" autocomplete="name" required aria-describedby="cf-name-error"><p class="field-error" id="cf-name-error" aria-live="polite"></p></div>
+            <div class="field"><label for="cf-email">Email</label><input class="input" id="cf-email" name="email" type="email" autocomplete="email" required aria-describedby="cf-email-error"><p class="field-error" id="cf-email-error" aria-live="polite"></p></div>
+          </div>
+          <div class="field"><label for="cf-subject">Sujet</label><input class="input" id="cf-subject" name="subject" type="text" required aria-describedby="cf-subject-error"><p class="field-error" id="cf-subject-error" aria-live="polite"></p></div>
+          <div class="field"><label for="cf-message">Message</label><textarea class="input" id="cf-message" name="message" required aria-describedby="cf-message-error"></textarea><p class="field-error" id="cf-message-error" aria-live="polite"></p></div>
+          <div class="form-footer">
+            <button class="btn btn-primary btn-lg blueprint" type="submit"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>Envoyer</button>
+            <p class="form-note" data-form-note></p>
+          </div>
+          <div class="form-status" data-form-status role="status" hidden></div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer data-site-footer class="site-footer"></footer>
+</body>
+</html>

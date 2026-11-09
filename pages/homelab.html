@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Homelab — Portfolio informatique &amp; IA</title>
+  <meta name="description" content="Mon homelab : machines, Raspberry Pi, serveur, NAS, services et infrastructure réseau.">
+  <meta name="theme-color" content="#121a22">
+  <script>
+    (function () {
+      var t = "dark";
+      try { t = localStorage.getItem("pf-theme") || "dark"; } catch (e) {}
+      document.documentElement.dataset.theme = t;
+      document.documentElement.classList.add("js");
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="../css/industry.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <script defer src="../js/data.js"></script>
+  <script defer src="../js/icons.js"></script>
+  <script defer src="../js/main.js"></script>
+  <script defer src="../js/homelab.js"></script>
+  <script defer src="../js/animations.js"></script>
+</head>
+<body data-page="homelab" data-base="../">
+  <a class="skip-link btn btn-primary" href="#contenu">Aller au contenu</a>
+  <header data-site-header class="site-header"></header>
+  <main id="contenu">
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb reveal"><a href="../index.html">~/accueil</a> / homelab</p>
+        <h1 class="reveal" style="--d:.08s">Homelab</h1>
+        <p class="section-lead reveal" style="--d:.16s">Machines, stockage, services hébergés et infrastructure réseau de mon laboratoire personnel.</p>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="infra-title">
+      <div class="container">
+        <h2 id="infra-title" class="sr-only">Infrastructure</h2>
+        <div class="monitor-panel blueprint reveal" data-monitor-panel></div>
+        <div class="topology blueprint reveal" data-homelab-topology></div>
+        <h2 class="sub-title reveal">Équipements</h2>
+        <div class="machine-grid" data-homelab-machines></div>
+        <h2 class="sub-title reveal">Services hébergés</h2>
+        <div class="reveal" data-homelab-services></div>
+        <h2 class="sub-title reveal">Projets d'administration</h2>
+        <div class="admin-grid" data-homelab-admin></div>
+        <div class="section-link"><a class="btn btn-secondary" href="projets.html?projet=homelab">Fiche projet Homelab <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></div>
+      </div>
+    </section>
+  </main>
+  <footer data-site-footer class="site-footer"></footer>
+</body>
+</html>

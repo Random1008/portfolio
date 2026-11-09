@@ -1,0 +1,29 @@
+/* animations.css — apparitions au scroll, filtres, effets. Désactivées si l'utilisateur préfère moins de mouvement. */
+
+.js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s var(--ease), transform .7s var(--ease); transition-delay: var(--d, 0s); }
+.js .reveal.is-visible { opacity: 1; transform: none; }
+
+/* Filtres de projets */
+.project-grid .project-card { transition: opacity .28s var(--ease), transform .28s var(--ease), border-color .25s, background-color .25s; }
+.project-grid.is-leaving .project-card { opacity: 0; transform: translateY(8px) scale(.985); }
+.project-card.is-entering { animation: card-in .45s var(--ease) both; animation-delay: var(--d, 0s); }
+@keyframes card-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+
+/* Modale */
+.project-modal[open] { animation: modal-in .3s var(--ease); }
+.project-modal[open]::backdrop { animation: fade-in .3s ease; }
+@keyframes modal-in { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+
+/* Terminal */
+.caret { animation: blink 1s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+
+/* Menu mobile */
+.nav-links { transition: opacity .25s var(--ease), transform .25s var(--ease), visibility .25s; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  .js .reveal { opacity: 1; transform: none; }
+}
