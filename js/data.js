@@ -11,33 +11,33 @@ window.PORTFOLIO = {
 
   /* ---------- Identité ---------- */
   profile: {
-    name: "",                 // ex. "Prénom Nom"
-    initials: "",             // ex. "PN" — sinon le logo affiche </>
+    name: "Flavio GARDONI",                 // ex. "Prénom Nom"
+    initials: "FG",             // ex. "PN" — sinon le logo affiche </>
     title: "Passionné d'informatique et d'intelligence artificielle",
     titleHighlight: "intelligence artificielle",
-    subtitle: "Développement, systèmes, cybersécurité et technologies intelligentes.",
+    subtitle: "Développement, systèmes informatique, technologies intelligentes.",
     intro: "Je conçois des projets personnels autour du développement logiciel, des systèmes Linux, des réseaux et de l'IA — du homelab aux agents intelligents.",
-    photo: "",                // ex. "assets/images/avatar.jpg"
-    cv: ""                    // ex. "assets/cv.pdf" — active le bouton « Télécharger mon CV »
+    photo: "asset/img/moi.png", // banniere Mon profil 
+    cv: "asset/document/CV_6adb3f7661d04.pdf"                    // ex. "assets/cv.pdf" — active le bouton « Télécharger mon CV »
   },
 
   /* ---------- Terminal de la page d'accueil ---------- */
   terminal: [
-    { cmd: "whoami", out: ["passionné d'informatique & d'IA"] },
-    { cmd: "ls ~/domaines", out: ["dev/  ia/  linux/  reseau/  cybersecurite/  electronique/"] },
+    { cmd: "whoami", out: ["Flavio GARDONI"] },
+    { cmd: "ls ~/domaines", out: ["dev/  ia/  linux/  homelab/  electronique/"] },
     { cmd: "cat objectif.txt", out: ["Continuer à progresser et concevoir des projets innovants."] }
   ],
 
   /* ---------- À propos ---------- */
   about: {
     paragraphs: [
-      "Passionné par l'informatique et les nouvelles technologies, je m'intéresse particulièrement au développement logiciel, à l'intelligence artificielle, aux systèmes Linux, aux réseaux et à la cybersécurité.",
-      "J'aime apprendre de nouvelles technologies, expérimenter des solutions et développer des projets personnels afin d'améliorer mes compétences techniques.",
-      "Mon objectif est de continuer à progresser dans le domaine informatique et de concevoir des projets innovants."
+      "Passionné par l'informatique et l'ia.",
+      "J'aime apprendre de nouvelles technologies, expérimenter des solutions et développer des projets afin d'améliorer mes compétences techniques.",
+      "Mon objectif est de continuer à progresser dans les domaine que je connais et en apprendre de nouveaux."
     ],
-    interests: ["Développement logiciel", "Intelligence artificielle", "Systèmes Linux", "Réseaux", "Cybersécurité", "Électronique & embarqué"],
-    goals: ["Continuer à progresser dans le domaine informatique", "Concevoir des projets innovants", "Approfondir mes connaissances techniques par la pratique"],
-    specialties: ["Administration Linux & homelab", "Automatisation & agents IA", "Électronique embarquée (Raspberry Pi, ESP32)"],
+    interests: ["Développement logiciel", "Intelligence artificielle / LLM", "Linux", "Réseaux", "Cybersécurité", "Électronique"],
+    goals: ["Continuer à progresser dans les domaine informatique que je connais", "Concevoir des projets", "apprendre toujours plus de competences techniques"],
+    specialties: ["homelab", "Automatisation", "agents IA", "Électronique embarquée (Raspberry Pi, ESP32)"],
     illustration: ""          // ex. "assets/images/univers.jpg"
   },
 
@@ -72,7 +72,8 @@ window.PORTFOLIO = {
       { name: "Reverse engineering", icon: "search", description: "Analyse du fonctionnement de programmes.", level: null }
     ]},
     { category: "Électronique", items: [
-      { name: "Raspberry Pi", icon: "circuit", description: "Serveurs, applications et automatisation.", level: null }
+      { name: "Raspberry Pi", icon: "circuit", description: "Serveurs, applications et automatisation.", level: null },
+      { name: "ESP32", icon: "circuit", description: "Serveurs, applications et automatisation.", level: null }
     ]}
   ],
 
