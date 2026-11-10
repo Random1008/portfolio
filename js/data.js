@@ -119,8 +119,8 @@ window.PORTFOLIO = {
       categories: ["linux", "reseau"],
       description: "Infrastructure informatique personnelle : Raspberry Pi, Docker, services réseau et monitoring.",
       tech: ["Raspberry Pi", "Docker", "Linux", "Réseau"],
-      image: "", images: [], github: "", demo: "",
-      context: "Mise en place d'une infrastructure informatique à la maison pour apprendre l'administration système et réseau en conditions réelles.",
+      image: "asset/img/homelab.png", images: [], github: "", demo: "",
+      context: "Infrastructure chez moi pour apprendre plusieurs logiciel et systeme",
       objectives: ["Héberger mes propres services", "Pratiquer l'administration Linux", "Superviser les machines"],
       features: ["Infrastructure informatique", "Raspberry Pi", "Conteneurs Docker", "Services réseau", "Monitoring", "Administration Linux"],
       challenges: [], solutions: [], improvements: []

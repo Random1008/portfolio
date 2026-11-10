@@ -178,6 +178,7 @@
   PF.mount("[data-ai-lab]", [
     ["Modèles utilisés", "message", PF.list(L.models)], ["Projets IA", "folder", PF.list(L.projects)],
     ["Outils", "terminal", PF.list(L.tools)], ["Expérimentations", "sparkles", PF.list(L.experiments)],
+    ["Projets à réaliser", "target", PF.list(L.ideas)],
     ["Démonstrations", "external", demoList(L.demos)]
   ].map(([t, ic, body]) => `<div class="lab-slot"><h4>${icon(ic, 16)}${t}</h4>${body}</div>`).join(""));
 
