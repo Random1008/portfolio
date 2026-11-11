@@ -120,13 +120,13 @@ window.PORTFOLIO = {
       categories: ["linux", "reseau", "electronique",],
       description: "Infrastructure informatique personnelle : Raspberry Pi, Docker, services réseau et monitoring.",
       tech: ["Raspberry Pi", "Docker", "Linux", "Réseau"],
-      image: "asset/img/homelab.png", images: [], github: "", demo: "",
+      image: "asset/img/homelab.png", images: ["asset/img/tailscale.png"], github: "", demo: "",
       context: "Infrastructure chez moi pour apprendre plusieurs logiciel et systeme de fonctionnement de chaque appareil",
       objectives: ["Héberger mes propres services", "ne plus dependre d'abonnement", "Superviser les machines"],
       features: ["Infrastructure informatique", "Raspberry Pi", "Conteneurs Docker", "Services réseau", "Monitoring", "Administration service"],
       challenges: ["1. Gerer les ip local", "2. Faire comuniquer toute les machines entre elles", "3. Securiser les appareils", "4. ne pas ouvrir de port sur internet a l'aveugle", "5. verifier l'etat des machine en tout temps"], 
       solutions: ["1. grace a une box internet jai cree un sous reseau ou jai pu attribuer une ip a chaque machine moi meme", "2. grace a SSH mes machine et des cle api", "3. j'ai mis des cle ssh sur mes machines pour faciliter l'acces au machines et des mot de passe a 25 caractere pour les connexion reseau ", "4. j'ai cree un reseau tailscale pour eviter d'ouvrir mes ports sur internet", "5. mise en place d'un service de verifications des machines uptime kuma"], 
-      improvements: ["c"]
+      improvements: ["ajout d'un meilleur gpu pour le serveur ia", "ajout d'un meilleur pc principal"]
     },
     {
       id: "assistant-ia", title: "Assistant IA personnel", icon: "bot",
