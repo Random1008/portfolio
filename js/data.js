@@ -91,7 +91,7 @@ window.PORTFOLIO = {
     ],
     lab: {
       intro: "creation et decouverte de fonctionnement",    // présentation de vos expérimentations avec l'IA
-      models: ["opus 5.5", "sonnet 5", "deepseek v4 flash", "Qwen3.8 OBLITERATED"],             // ex. ["Nom du modèle — usage"]
+      models: ["opus 5.5", "sonnet 5", "deepseek v4 flash", "Qwen35 2b OBLITERATED"],             // ex. ["Nom du modèle — usage"]
       projects: ["infoduo - duolingo mais pour la tech", "knowledge os - obsidian mais optimiser pour l'ia", "random agent - agent ia baser sur deepseek harness", "arc browser - un navigateur web 100% personalisable baser sur chromium",],
       tools: ["Claude desktop", "terminal agent hermes", "code oss", "brave browser", "photocraft", "canva",],
       experiments: ["test du models chatgpt-oss-120B sur une Radeon RX 9060 XT 16Go", "test d'un model 1B sur un raspberry pi 4 2Go",],
@@ -108,7 +108,8 @@ window.PORTFOLIO = {
     { id: "linux", label: "Linux" },
     { id: "cyber", label: "Cybersécurité" },
     { id: "reseau", label: "Réseau" },
-    { id: "electronique", label: "Électronique" }
+    { id: "electronique", label: "Électronique" }//,
+//    { id: "electronique", label: "Électronique" }
   ],
   /* Modèle d'un projet — copiez un bloc pour en ajouter un.
      image / images : chemins vers assets/projects/...
@@ -116,14 +117,16 @@ window.PORTFOLIO = {
   projects: [
     {
       id: "homelab", title: "Homelab personnel", icon: "home",
-      categories: ["linux", "reseau"],
+      categories: ["linux", "reseau", "electronique",],
       description: "Infrastructure informatique personnelle : Raspberry Pi, Docker, services réseau et monitoring.",
       tech: ["Raspberry Pi", "Docker", "Linux", "Réseau"],
       image: "asset/img/homelab.png", images: [], github: "", demo: "",
-      context: "Infrastructure chez moi pour apprendre plusieurs logiciel et systeme",
-      objectives: ["Héberger mes propres services", "Pratiquer l'administration Linux", "Superviser les machines"],
-      features: ["Infrastructure informatique", "Raspberry Pi", "Conteneurs Docker", "Services réseau", "Monitoring", "Administration Linux"],
-      challenges: [], solutions: [], improvements: []
+      context: "Infrastructure chez moi pour apprendre plusieurs logiciel et systeme de fonctionnement de chaque appareil",
+      objectives: ["Héberger mes propres services", "ne plus dependre d'abonnement", "Superviser les machines"],
+      features: ["Infrastructure informatique", "Raspberry Pi", "Conteneurs Docker", "Services réseau", "Monitoring", "Administration service"],
+      challenges: ["1. Gerer les ip local", "2. Faire comuniquer toute les machines entre elles", "3. Securiser les appareils", "4. ne pas ouvrir de port sur internet a l'aveugle", "5. verifier l'etat des machine en tout temps"], 
+      solutions: ["1. grace a une box internet jai cree un sous reseau ou jai pu attribuer une ip a chaque machine moi meme", "2. grace a SSH mes machine et des cle api", "3. j'ai mis des cle ssh sur mes machines pour faciliter l'acces au machines et des mot de passe a 25 caractere pour les connexion reseau ", "4. j'ai cree un reseau tailscale pour eviter d'ouvrir mes ports sur internet", "5. mise en place d'un service de verifications des machines uptime kuma"], 
+      improvements: ["c"]
     },
     {
       id: "assistant-ia", title: "Assistant IA personnel", icon: "bot",
